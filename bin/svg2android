@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require "thor"
+
+class Svg2android < Thor
+  desc "convert input output", "convert input / al file inside input folder and save it to output"
+  long_desc <<-LONGDESC
+    svg2Android will convert your svg to android xml so android can use it as an assets
+
+    ex :\n
+    > $./svg2Android convert input output
+  LONGDESC
+  def convert(input,output)
+    puts input;
+    puts output;
+  end
+end
+#
+Svg2android.start(ARGV)
